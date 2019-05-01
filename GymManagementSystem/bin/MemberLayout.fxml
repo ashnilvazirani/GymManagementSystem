@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MemberController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="First Name:" />
+      <TextField fx:id="member_first_name" layoutX="124.0" layoutY="10.0" />
+      <Label layoutX="14.0" layoutY="52.0" text="Last Name" />
+      <TextField fx:id="member_last_name" layoutX="124.0" layoutY="48.0" />
+      <Label layoutX="14.0" layoutY="93.0" text="Mobile" />
+      <TextField fx:id="member_mob" layoutX="124.0" layoutY="89.0" />
+      <Label layoutX="14.0" layoutY="135.0" text="Email" />
+      <TextField fx:id="member_email" layoutX="124.0" layoutY="131.0" />
+      <Label layoutX="14.0" layoutY="173.0" text="Address" />
+      <TextArea fx:id="member_address" layoutX="123.0" layoutY="173.0" prefHeight="127.0" prefWidth="149.0" />
+	  <Label layoutX="11.0" layoutY="341.0" prefHeight="18.0" prefWidth="88.0" text="Blood Group" />
+      <ComboBox fx:id="blood_group_cb" layoutX="123.0" layoutY="336.0" onAction="#getBloodGroup" prefWidth="150.0" promptText="--blood group--" />
+      <Label layoutX="309.0" layoutY="52.0" prefHeight="18.0" prefWidth="88.0" text="Height(in cms)" />
+      <TextField fx:id="member_height" layoutX="419.0" layoutY="48.0" />
+      <Label fx:id="member_weight" layoutX="309.0" layoutY="93.0" prefHeight="18.0" prefWidth="88.0" text="Weight(in kgs)" />
+      <TextField fx:id="member_height1" layoutX="419.0" layoutY="89.0" />
+      <Label fx:id="member_weight1" layoutX="310.0" layoutY="135.0" prefHeight="18.0" prefWidth="86.0" text="Target/Goal" />
+      <TextField fx:id="member_goal" layoutX="419.0" layoutY="131.0" />
+      <Label layoutX="310.0" layoutY="236.0" prefHeight="18.0" prefWidth="88.0" text="Medical Issue" />
+      <TextArea fx:id="member_medical_issue" layoutX="421.0" layoutY="236.0" prefHeight="127.0" prefWidth="152.0" />
+      <Label layoutX="309.0" layoutY="187.0" prefHeight="18.0" prefWidth="88.0" text="Martial Status" />
+      <ComboBox fx:id="martial_status_cb" layoutX="421.0" layoutY="182.0" onAction="#getMartialStatus" prefWidth="150.0" promptText="--martial status--" />
+      <Label layoutX="309.0" layoutY="13.0" prefHeight="18.0" prefWidth="88.0" text="Gender" />
+      <ComboBox fx:id="gender_cb" layoutX="421.0" layoutY="8.0" onAction="#getGender" prefWidth="150.0" promptText="--gender--" />
+   </children>
+</AnchorPane>
